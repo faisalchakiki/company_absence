@@ -1,4 +1,5 @@
 import "leaflet/dist/leaflet.css"
+import "leaflet/dist/images/marker-shadow.png";
 import { Line, Bar } from "react-chartjs-2";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
