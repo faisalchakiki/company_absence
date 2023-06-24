@@ -1,7 +1,12 @@
+import "leaflet/dist/leaflet.css"
 import { Line, Bar } from "react-chartjs-2";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+
 import monthCharts from "../data/monthCharts.json";
 import dataAttendance from "../data/dataAttendance.json";
 import dataEmployee from "../data/dataEmployee.json";
+import markers from "../data/markers.json";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -13,6 +18,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -36,7 +42,7 @@ const options = {
 
 const AttendanceData = {
   labels: monthCharts,
-  datasets : dataAttendance   
+  datasets: dataAttendance,
 };
 
 const EmployeeInform = {
@@ -47,7 +53,28 @@ const EmployeeInform = {
 function Homepage() {
   return (
     <div className="flex justify-between h-[100vh]">
-      <div className="w-[70%] bg-white">MAP</div>
+      <div className="w-[70%] bg-white">
+        <MapContainer
+          className="w-full h-[100%]"
+          center={[-5.996444214929895, 106.5984735373413]}
+          zoom={6}
+          scrollWheelZoom={false}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          {
+            markers.map((marker,index) => (
+              <Marker key={index} position={marker.geocode}>
+                <Popup>
+                  <h2 className="font-semibold">{marker.popUp}</h2>
+                </Popup>
+              </Marker>
+            ))
+          }
+        </MapContainer>
+      </div>
       <div className="flex-1 flex flex-col justify-between py-5">
         <section className="h-[50%]">
           <div className="bg-skyblue px-3">
