@@ -1,0 +1,17 @@
+[
+  {
+  "label": "Sick",
+  "data": [54,54,65,75,55],
+  "backgroundColor": "red"
+},
+{
+  "label": "On Leave",
+  "data":[32,342,54,652,21] ,
+  "backgroundColor": "blue"
+},
+{
+  "label": "On Project",
+  "data":[32,327,43,432,656] ,
+  "backgroundColor": "green"
+}
+]
