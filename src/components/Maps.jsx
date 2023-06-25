@@ -34,11 +34,11 @@ function Maps() {
   };
 
   return (
-    <div className="w-[70%] bg-white">
+    <div className="w-[100%] h-[60vh] desktop:w-[70%] big-tablet:h-[100vh] bg-white">
       <MapContainer
         className="w-full h-[100%]"
-        center={[-5.996444214929895, 106.5984735373413]}
-        zoom={6}
+        center={[-6.607957612898915, 110.81722355011087]}
+        zoom={5}
         scrollWheelZoom={false}
       >
         <TileLayer

@@ -3,7 +3,7 @@ import Charts from "../components/Charts";
 
 function Homepage() {
   return (
-    <div className="flex justify-between h-[100vh]">
+    <div className="flex flex-col big-tablet:flex-row justify-between min-h-[100vh]">
       <Maps />
       <Charts />
     </div>
