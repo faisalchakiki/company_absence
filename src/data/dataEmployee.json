@@ -1,17 +1,62 @@
 [
   {
-  "label": "Sick",
-  "data": [54,54,65,75,55],
-  "backgroundColor": "red"
-},
-{
-  "label": "On Leave",
-  "data":[32,342,54,652,21] ,
-  "backgroundColor": "blue"
-},
-{
-  "label": "On Project",
-  "data":[32,327,43,432,656] ,
-  "backgroundColor": "green"
-}
+  "city" : "JAKARTA",
+  "data":[
+      {
+      "label": "Sick",
+      "data": [23,32,23,42,12],
+      "backgroundColor": "red"
+      },
+      {
+        "label": "On Leave",
+        "data":[23,32,18,34,65],
+        "backgroundColor": "blue"
+      },
+      {
+        "label": "On Project",
+        "data":[76,45,87,45,56],
+        "backgroundColor": "green"
+      }
+    ]
+  },
+  {
+    "city" : "BALI",
+    "data":[
+        {
+        "label": "Sick",
+        "data": [32,40,10,25,21],
+        "backgroundColor": "red"
+        },
+        {
+          "label": "On Leave",
+          "data": [10,20,18,25,30],
+          "backgroundColor": "blue"
+        },
+        {
+          "label": "On Project",
+          "data": [40,36,46,65,78],
+          "backgroundColor": "green"
+        }
+      ]
+    },
+    {
+      "city" : "SINGAPORE",
+      "data":[
+          {
+          "label": "Sick",
+          "data": [10,20,18,25,30],
+          "backgroundColor": "red"
+          },
+          {
+            "label": "On Leave",
+            "data":[32,40,10,25,21],
+            "backgroundColor": "blue"
+          },
+          {
+            "label": "On Project",
+            "data": [50,60,65,75,80],
+            "backgroundColor": "green"
+          }
+        ]
+      }
 ]
