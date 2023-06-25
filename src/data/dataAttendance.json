@@ -1,19 +1,19 @@
 [
   {
     "label": "Jakarta",
-    "data" : [150, 200, 110, 120, 150, 300],
+    "data" : [150, 200, 110, 120, 150],
     "borderColor" : "blue",
     "backgroundColor" : "blue"
   },
   {
     "label": "Singapore",
-    "data" : [200, 200, 180, 120, 100, 300],
+    "data" : [200, 200, 180, 120, 129],
     "borderColor" : "yellow",
     "backgroundColor" : "yellow"
   },
   {
     "label": "Bali",
-    "data" : [100, 200, 300, 120, 150, 300],
+    "data" : [100, 200, 300, 120, 150],
     "borderColor" : "green",
     "backgroundColor" : "green"
   }
