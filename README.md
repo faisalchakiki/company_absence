@@ -1,4 +1,4 @@
-# Company Employee Imformation
+# Company Employee Information
 ### Summarizes company employee attendance data in a chart. built using ReactJs
 
 ### Technology used
